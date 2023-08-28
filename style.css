@@ -1,0 +1,558 @@
+@media (width <= 600px) {
+    body {
+        background-color: hsl(185, 41%, 84%);
+        font-family: "Space Mono", Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .logo-container {
+        margin-top: 100px;
+        display: block;
+        padding: 40px;
+       
+    }
+
+    .logo-container-desktop{
+        display: none;
+    }
+
+    .main-container {
+        background-color: white;
+        margin-top: 25px;
+        padding: 25px;
+        width: 330px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 50px 50px 0 0;
+        
+    }
+
+    .main-container-desktop {
+        display: none;
+    }
+
+    .bill-input-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 17px;
+        margin-bottom: 30px;
+        
+    }
+
+    .bill-input-container label {
+        font-size: 17px;
+        margin-bottom: 5px;
+        color: hsl(184, 14%, 56%);
+        font-weight: bold;
+        font-family: "Space Mono", Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .bill-input-container input {
+        font-family: "Space Mono", Verdana, Geneva, Tahoma, sans-serif;
+        padding: 10px 20px;
+        width: 260px;
+        text-align: right;
+        font-size: 17px;
+        background-color: hsl(189, 41%, 97%);
+        position: relative;
+        border: none;
+        font-weight: bolder;
+        color: hsl(183, 100%, 15%);
+    }
+
+    .bill-input-container input:focus {
+        outline: none;
+    }
+
+    .input-container {
+        display: flex;
+        position: relative;
+    }
+
+    .dollar-container {
+        display: flex;
+        position: absolute;
+        left: 15px;
+        top: 17px;
+    }
+
+    .input-image {
+        width: 13px;
+    }
+
+    .percents-container {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 25px;
+    }
+
+    .select-tip {
+        margin: 0;
+        margin-bottom: 20px;
+        font-size: 17px;
+        font-weight: bold;
+        color: hsl(184, 14%, 56%);
+        font-family: "Space Mono", Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .button-container {
+        display: flex;
+        
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+  
+
+   /*
+    .button-container button {
+        padding: 14px 40px;
+        background-color: hsl(183, 100%, 15%);
+        border: none;
+        color: white;
+        font-size: medium;
+        border-radius: 5px;
+        font-family: "Space Mono", Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+   */
+
+    .button1 {
+        margin-right: 23px;
+        background-color: hsl(183, 100%, 15%);
+        border: none;
+        color: white;
+        font-size: large;
+        border-radius: 5px;
+        font-family: "Space Mono", Verdana, Geneva, Tahoma, sans-serif;
+        padding: 20px 50px;
+    }
+
+    .button2 {
+        margin-right: 16px;
+        background-color: hsl(183, 100%, 15%);
+        border: none;
+        color: white;
+        font-size: medium;
+        border-radius: 5px;
+        font-family: "Space Mono", Verdana, Geneva, Tahoma, sans-serif;
+        padding: 20px 50px;
+    }
+
+    .button3 {
+        background-color: hsl(183, 100%, 15%);
+        border: none;
+        color: white;
+        font-size: medium;
+        border-radius: 5px;
+        font-family: "Space Mono", Verdana, Geneva, Tahoma, sans-serif;
+        padding: 20px 50px;
+    }
+
+    .is-toggled {
+        background-color: hsl(172, 67%, 45%);
+        color: hsl(183, 100%, 15%);
+    }
+    
+    .people-container {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 20px;
+    }
+
+    .error-message {
+        color: red;
+        font-weight: bold;
+        visibility: hidden;
+        font-size: small;
+    }
+    
+    .Number {
+        font-weight: bold;
+        color: hsl(184, 14%, 56%);
+        font-size: small;
+    }
+
+
+    .custom-input {
+        padding: 12px 30px;
+        width: 80px;
+        font-size: 25px;
+        text-align: right;
+        color: hsl(183, 100%, 15%);
+        background-color: hsl(189, 41%, 97%);
+        border: none;
+        font-weight: bolder;
+        border-radius: 5px;
+        font-family: "Space Mono", Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .custom-input:focus {
+        outline: none;
+    }
+
+    .custom-input::placeholder {
+        font-weight: bold;
+        color: hsl(183, 100%, 15%);
+        font-size: 18px;
+    }
+
+    .Number-of-people::placeholder {
+        color: hsl(185, 41%, 84%);
+    }
+
+    .bottom-container {
+        background-color: hsl(183, 100%, 15%);
+        
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+    .write-up-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tip-amount-container p {
+        margin: 0;
+        font-size: medium;
+        margin-bottom: 10px;
+        font-family: "Space Mono", Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        font-weight: bold;
+    }
+
+    .tip-amount-container span {
+        color: hsl(184, 14%, 56%);
+        font-size: small;
+    }
+
+   .amount-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   }
+
+   .amount-container p {
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: "Space Mono", Verdana, Geneva, Tahoma, sans-serif;
+    color: hsl(172, 67%, 45%);
+    font-weight: bold;
+   }
+
+   
+
+   .bottom-button-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+   }
+
+   .bottom-button-container button {
+    padding: 10px 50px;
+    border-radius: 5px;
+    border: none;
+    font-size: medium;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-weight: bolder;
+   }
+    
+}
+
+
+
+@media (width >= 601px) {
+    body {
+        background-color: hsl(185, 41%, 84%);
+        font-family: "Space Mono", Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .logo-container {
+        display: none;
+    }
+
+    .logo-container-desktop {
+        margin-top: 30px;
+    }
+
+    .main-container {
+        display: none;
+    }
+
+    .main-container-desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: white;
+        margin-top: 30px;
+        width: 560px;
+        padding: 20px;
+        border-radius: 10px;
+        align-items: center;
+    }
+
+    .bill-input-container1 label {
+        margin-bottom: 10px;
+    }
+
+    .input-container {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+    .dollar-container {
+        display: flex;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+
+    .input-container input {
+        padding: 10px;
+        background-color: hsl(189, 41%, 97%);
+        border: none;
+        text-align: right;
+        font-weight: bolder;
+        font-size: large;
+        color: hsl(183, 100%, 15%);
+        border-radius: 5px;
+    }
+
+    .input-container input:focus {
+        outline: none;
+        border: 1px solid hsl(172, 67%, 45%);
+    }
+
+    .bill {
+        font-size: small;
+        font-weight: bold;
+    }
+    
+    .select-tip {
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: small;
+    }
+
+    .button-container {
+        margin-bottom: 10px;
+    }
+
+    .button1 {
+        padding: 10px 28px;
+        margin-right: 10px;
+        background-color: hsl(183, 100%, 15%);
+        border: none;
+        border-radius: 3px;
+        color: white;
+        font-size: medium;
+        cursor: pointer;
+    }
+
+    .button2 {
+        padding: 10px 25px;
+        margin-right: 10px;
+        background-color: hsl(183, 100%, 15%);
+        border: none;
+        border-radius: 3px;
+        color: white;
+        font-size: medium;
+        cursor: pointer;
+    }
+
+    .button3 {
+        padding: 10px 25px;
+        margin-right: 9px;
+        background-color: hsl(183, 100%, 15%);
+        border: none;
+        border-radius: 3px;
+        color: white;
+        font-size: medium;
+        cursor: pointer;
+    }
+
+    .button4 {
+        padding: 10px 25px;
+        margin-right: 10px;
+        background-color: hsl(183, 100%, 15%);
+        border: none;
+        border-radius: 3px;
+        color: white;
+        font-size: medium;
+        cursor: pointer;
+    }
+
+    .button5 {
+        padding: 10px 25px;
+        background-color: hsl(183, 100%, 15%);
+        border: none;
+        border-radius: 3px;
+        color: white;
+        font-size: medium;
+        cursor: pointer;
+    }
+
+    .custom-input {
+        padding: 8px;
+        width: 70px;
+        text-align: right;
+        border: none;
+        background-color: hsl(189, 41%, 97%);
+        font-weight: bolder;
+        font-size: large;
+        color: hsl(183, 100%, 15%);
+        border-radius: 5px;
+    }
+
+    .custom-input:focus {
+        outline: none;
+        border: 1px solid hsl(172, 67%, 45%);
+    }
+
+    .custom-input::placeholder {
+        font-size: small;
+        margin-right: 10px;
+        font-weight: bolder;
+        
+    }
+
+    .people-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .Number {
+        font-size: small;
+    }
+
+    .error-message {
+        font-size: small;
+        color: red;
+        visibility: hidden;
+    }
+
+    .bottom-container {
+        background-color: hsl(183, 100%, 15%);
+        width: 250px;
+        height: 300px;
+        border-radius: 10px;
+        
+    }
+    
+    .write-up-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 30px;
+        margin-left: 20px;
+        align-items: center;
+    }
+
+   .tip-amount-container {
+        margin-top: 20px;
+   }
+
+   .tip-amount-container p {
+    font-weight: bold;
+    color: white;
+   }
+
+   .amount-container {
+        margin-top: 10px;
+   }
+
+   .amount-container p{
+    font-size: x-large;
+    font-weight: bolder;
+    color: hsl(172, 67%, 45%);
+}
+    
+    .tip-amount-container p {
+        font-size: 10px;
+        margin: 0;
+    }
+
+    .tip-amount-container span {
+        font-size: 10px;
+        margin: 0;
+        color: hsl(172, 67%, 45%);
+    }
+
+    .write-up-container1 {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 30px;
+        align-items: center;
+    }
+
+    .tip-amount-container1 p {
+        color: white;
+        font-weight: bolder;
+        font-size: 10px;
+        margin: 0;
+    }
+
+    .tip-amount-container1 span {
+        color: white;
+        font-weight: bolder;
+        font-size: 10px;
+        margin: 0;
+        color: hsl(172, 67%, 45%);
+    }
+
+    .amount-container1 p {
+        font-size: x-large;
+        font-weight: bolder;
+        color: hsl(172, 67%, 45%);
+    }
+
+    .write-up-container1 {
+        margin-bottom: 75px;
+    }
+
+    .bottom-button-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .bottom-button-container button {
+        border: none;
+        background-color: hsl(172, 73%, 28%);
+        color: hsl(183, 100%, 15%);
+        font-weight: bolder;
+        padding: 10px 80px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    .bottom-button-container button:hover {
+        background-color: hsl(172, 84%, 66%);
+    }
+
+}
+
